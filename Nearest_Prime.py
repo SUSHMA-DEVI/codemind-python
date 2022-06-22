@@ -1,12 +1,12 @@
-def is_prime(a):
+def is_prime(j):
     i=2
     v=0
-    while i!=a:
-        if a%i==0:
+    while i!=j:
+        if j%i==0:
             v=1
         i+=1
     if v==0:
-        return a
+        return j
 x=int(input())
 for i in range(x):
     y=int(input())
@@ -26,4 +26,3 @@ for i in range(x):
         print(n)
     else:
         print(m)
-        
