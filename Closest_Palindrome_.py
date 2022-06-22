@@ -1,4 +1,7 @@
-def is_pal(j):
+def is_palin(j):
+    
+    
+    
     m=j
     s=0
     while m!=0:
@@ -7,20 +10,24 @@ def is_pal(j):
         m=m//10
     if j==s:
         return j
+        
+        
 x=int(input())
 for i in range(x-1,1,-1):
-    if is_pal(i):
-        a=i
+    if is_palin(i):
+        a = i
         break
-g=x+1
+g = x+1
 while g!=0:
-    if is_pal(g):
-        b=g
+    if is_palin(g):
+        b = g
         break
     g+=1
-if (x-a)<(b-x):
+if(x-a)<(b-x):
+    
     print(a)
 elif(x-a)==(b-x):
     print(a,b)
 else:
     print(b)
+        
