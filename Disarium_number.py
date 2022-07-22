@@ -1,6 +1,7 @@
 n=int(input())
 length=len(str(n))
 temp=n
+i=0
 s=0
 while temp>0:
     i=temp%10
@@ -8,6 +9,6 @@ while temp>0:
     temp=temp//10
     length=length-1
 if s==n:
-    print("True")
+    print(True)
 else:
-    print("False")
+    print(False)
